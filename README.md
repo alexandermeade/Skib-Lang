@@ -19,15 +19,17 @@ pretty self-explanatory here:
 
 ![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/1ddedc88-d8e2-46f7-9f0d-5544930e7336)
 
-# fizzBuzz and functions!
-
-![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/316a0be8-bcf3-4d49-bb9e-710cd72acb6f)
-
 # anonymous functions
 
 use skibidi _() {} to make an anonymoush function :3
 
 ![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/cc3f355a-8ff9-4854-ba18-37ec6736ad37)
+
+# fizzBuzz and functions!
+
+![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/316a0be8-bcf3-4d49-bb9e-710cd72acb6f)
+
+
 
 This program will then compile inferior Lua code: 
 
