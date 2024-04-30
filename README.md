@@ -72,3 +72,10 @@ Now the big filepath may be off-putting to you, and with good reason, but we can
 ![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/d712cd53-67e9-4478-8ce6-fce389556286)
 
 
+#uses
+
+since everything in this langauge is built off of lua you can use lua libraries with it such as Love2D which I used here ^^
+
+
+![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/d3ba7b83-abb1-4491-b1a8-3fc7f29595fc)
+
