@@ -44,7 +44,7 @@ This program uses embedding via the "ohio" keyword to allow for the use of lua i
 
 # pipes!
 
-However, I'm not quite satisfied yet with the whole look of this, so let's use pipes to make it look good.
+However, I'm not quite satisfied yet with the whole look of this, so let's use pipes to make it look good and to spite javascript. 
 
 ![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/cb842e7c-35fd-45f0-8001-6ca974db7d30)
 
