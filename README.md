@@ -35,9 +35,14 @@ This program will then compile inferior Lua code: 
 
 ![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/9797cdab-6d73-4c52-9311-acfea5f13c6a)
 
-Now you can't have a modern programming language without loops, so let's put some in our Fizzbuzz program.
+Side Note you can use the keyword "mrworldwide" to make the function public to other modules :D
+
+![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/da21b2e9-c285-41b8-8edb-b11958c89ae2)
 
 # variable decleration, loops, breaking!
+
+
+Now you can't have a modern programming language without loops, so let's put some in our Fizzbuzz program.
 
 ![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/b07ebac9-c91d-4684-babf-5723fc576ac5)
 
