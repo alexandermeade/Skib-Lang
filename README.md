@@ -13,11 +13,18 @@ SkibLang comes with a variety of features, such as functions.
 
 As an example, this is a simple fizzbuzz program in Skiblang.
 
-#comments and vars
+# comments and vars
 
 pretty self-explanatory here:
 
 ![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/1ddedc88-d8e2-46f7-9f0d-5544930e7336)
+
+# data tables
+
+!classes == peace tiktokrizzparty true
+
+![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/4f700409-37ad-4761-a28e-ed7508a881bc)
+
 
 # anonymous functions
 
