@@ -1,1 +1,1 @@
-Haiii this is a prebuild exe file for windows ^^
+Haiii this is a pre compiled exe file for windows ^^
