@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
@@ -222,6 +222,49 @@ namespace SkibLang
 
             this.output += $"\n{this.currNode.getToken().getValueS()}({args})\n";
         }
+        private static string evaluateFunctionCallStatic(ASTNode node)
+        {
+            if (node.getToken().getTokenTypeLiteral() != TokenType.funcCall)
+                return "";
+            string args = "";
+
+            //Console.Writeline($"\n\n\n\n\n ================PARSNIG{this.currNode.getToken().getValueS()}\n\n\n\n");
+
+            foreach (List<Token> tokens in node.getToken().getParam())
+            {
+                tokens.Add(new Token(TokenType.EOF, "\\0"));
+                Parser parser = new Parser(tokens);
+                parser.start();
+                Compiler compiler = new Compiler(parser.getNodes());
+                compiler.start();
+                args += compiler.getOutput();
+                args += ',';
+            }
+
+
+            args = args.Remove(args.Length - 1, 1);
+
+            //Console.Writeline(args);
+
+            return $"\n{node.getToken().getValueS()}({args})\n";
+        }
+
+        private static string evaluateBlock(ASTNode node) {
+            string args = "";
+            foreach (List<Token> tokens in node.getToken().getParam())
+            {
+                tokens.Add(new Token(TokenType.EOF, "\\0"));
+                Parser parser = new Parser(tokens);
+                parser.start();
+                Compiler compiler = new Compiler(parser.getNodes());
+                compiler.start();
+                args += compiler.getOutput();
+                args += '\n';
+            }
+
+            return args;
+
+        }
 
         private static string evaluateMath(ASTNode node)
         {
@@ -242,9 +285,7 @@ namespace SkibLang
 
 
                 case TokenType.funcCall:
-                    string args = Compiler.collectArgsString(node);
-
-                    return $"{node.getToken().getValueS()}({args})";
+                    return Compiler.evaluateFunctionCallStatic(node);
 
                 case TokenType.Plus:
                     ASTNode left = node.getLeft();
@@ -283,6 +324,7 @@ namespace SkibLang
                     return $"not {evaluateMath(node.getRight())}";
                 case TokenType.EOF:
                     return "";
+            
             }
             List<ASTNode> aSTNodes = new List<ASTNode>();
             aSTNodes.Add(node);
