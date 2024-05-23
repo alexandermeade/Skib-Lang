@@ -108,8 +108,7 @@ namespace SkibLang
                 Token temp = this.parseSymbol();
                 Token tok = Token.toInstruction(temp.getValueS());
 
-                if (tok.getTokenTypeLiteral() != TokenType.Id)
-                    return tok;
+              
                 this.skipWhitespace();
 
                 if (this.getNext() == '[')
