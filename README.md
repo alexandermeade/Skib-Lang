@@ -108,4 +108,7 @@ since everything in this langauge is built off of lua you can use lua libraries 
 
 # Extras
 
+![image](https://github.com/alexandermeade/Skib-Lang/assets/128431625/3b470d26-7c97-4175-b5d4-5427092fe526)
+
+
 Vim highlighting support with the skibHighligh plugin! https://github.com/alexandermeade/skibHighlight
