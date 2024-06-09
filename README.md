@@ -2,6 +2,10 @@
 ![fire](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/d0e0aab8-c12c-47ac-97af-dd8439e9f9cb)
 
 
+#adviosory note
+
+I love lua this is pure parody 
+
 # Skib-Lang
 A superset of Lua that uses the most up-to-date syntax and coding conventions to both adhere to the newer generation's linguistic needs and not have to program in Lua.
 
