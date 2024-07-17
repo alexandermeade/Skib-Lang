@@ -111,6 +111,10 @@ namespace SkibLang
 
                 case TokenType.BWNot:
                 case TokenType.Not:
+<<<<<<< HEAD
+=======
+                case TokenType.Sub:
+>>>>>>> master
                     this.next(tok.getTokenTypeLiteral());
                     return new ASTNode(tok, null, this.factor());
 

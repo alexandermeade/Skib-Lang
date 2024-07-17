@@ -68,6 +68,10 @@ namespace SkibLang
         Namespace,
 
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
     internal class Token
     {
         private long valueL = 0;
