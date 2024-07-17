@@ -30,9 +30,9 @@ pretty self-explanatory here:
 ![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/4f700409-37ad-4761-a28e-ed7508a881bc)
 
 
-# anonymous functions
+# cloujures 
 
-use skibidi _() {} to make an anonymoush function :3
+use skibidi _() {} to make a cloujures :3
 
 ![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/cc3f355a-8ff9-4854-ba18-37ec6736ad37)
 
