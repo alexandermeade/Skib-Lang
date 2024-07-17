@@ -1,0 +1,4 @@
+
+sus (2 == 2 || 1 == 2) print("this ran right")
+
+sus (1 == 2 || 1 == 2) print("this did run right ran right")
