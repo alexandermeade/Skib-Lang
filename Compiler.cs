@@ -318,7 +318,7 @@ namespace SkibLang
                     return $"({evaluateMath(node.getLeft())}) and ({evaluateMath(node.getRight())})";
                 case TokenType.Or:
 
-                    return $"({evaluateMath(node.getLeft())}) or {node.getToken().getValueS()} ({evaluateMath(node.getRight())})";
+                    return $"({evaluateMath(node.getLeft())}) or  ({evaluateMath(node.getRight())})";
 
                 case TokenType.Not:
                     return $"not {evaluateMath(node.getRight())}";
