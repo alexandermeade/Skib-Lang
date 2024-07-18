@@ -299,14 +299,13 @@ namespace SkibLang
                     return $"({evaluateMath(node.getLeft())}) {node.getToken().getValueS()} ({evaluateMath(node.getRight())})";
 
                 case TokenType.Sub:
-<<<<<<< HEAD
-=======
+
                     left = node.getLeft();
                     if (left == null) {
                         return $"{node.getToken().getValueS()}({evaluateMath(node.getRight())})";
                     }
                     return $"({evaluateMath(node.getLeft())}) {node.getToken().getValueS()} ({evaluateMath(node.getRight())})";
->>>>>>> master
+
                 case TokenType.Div:
                 case TokenType.Mult:
                 case TokenType.Mod:
