@@ -1,0 +1,2 @@
+C:\Users\alex\Desktop\skibRepo\Skib-Lang\bin\Release\net8.0\win-x64\publish\skib.cs.pdb
+C:\Users\alex\Desktop\skibRepo\Skib-Lang\bin\Release\net8.0\win-x64\publish\skib.cs.exe

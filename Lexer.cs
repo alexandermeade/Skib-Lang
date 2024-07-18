@@ -149,9 +149,18 @@ namespace SkibLang
                     List<Token> tokens = new List<Token>();
                     this.next();
                     int nest = 0;
-                    while (true)
-                    {
+                    while (true) {
+
                         Token token = this.lex();
+                        
+                        switch(token.getTokenTypeLiteral()) {
+                            case TokenType.LParen:
+                                nest += 1;
+                                break;
+                            case TokenType.RParen:
+                                nest -= 1;
+                                break;
+                        }
 
                         if (token.getTokenTypeLiteral() == TokenType.comma)
                         {
@@ -160,7 +169,8 @@ namespace SkibLang
                             this.next();
                             continue;
                         }
-                        if (token.getTokenTypeLiteral() == TokenType.RParen && nest == 0)
+                         
+                        if (token.getTokenTypeLiteral() == TokenType.RParen && nest < 0)
                         {
                             param.Add(tokens);
                             tokens = new List<Token>();

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alex\\Desktop\\skibRepo\\skib.cs\\skib.cs.csproj": {}
+    "C:\\Users\\alex\\Desktop\\skibRepo\\Skib-Lang\\skib.cs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alex\\Desktop\\skibRepo\\skib.cs\\skib.cs.csproj": {
+    "C:\\Users\\alex\\Desktop\\skibRepo\\Skib-Lang\\skib.cs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alex\\Desktop\\skibRepo\\skib.cs\\skib.cs.csproj",
+        "projectUniqueName": "C:\\Users\\alex\\Desktop\\skibRepo\\Skib-Lang\\skib.cs.csproj",
         "projectName": "skib.cs",
-        "projectPath": "C:\\Users\\alex\\Desktop\\skibRepo\\skib.cs\\skib.cs.csproj",
+        "projectPath": "C:\\Users\\alex\\Desktop\\skibRepo\\Skib-Lang\\skib.cs.csproj",
         "packagesPath": "C:\\Users\\alex\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alex\\Desktop\\skibRepo\\skib.cs\\obj\\",
+        "outputPath": "C:\\Users\\alex\\Desktop\\skibRepo\\Skib-Lang\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
