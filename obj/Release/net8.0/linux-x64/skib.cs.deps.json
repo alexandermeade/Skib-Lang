@@ -18,7 +18,15 @@
       },
       "runtimepack.Microsoft.NETCore.App.Runtime.linux-x64/8.0.7": {
         "runtime": {
+          "System.Collections.Concurrent.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.724.31311"
+          },
           "System.Collections.Immutable.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.724.31311"
+          },
+          "System.Collections.NonGeneric.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.724.31311"
           },
@@ -26,7 +34,19 @@
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.724.31311"
           },
+          "System.ComponentModel.Primitives.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.724.31311"
+          },
+          "System.ComponentModel.TypeConverter.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.724.31311"
+          },
           "System.Console.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.724.31311"
+          },
+          "System.Diagnostics.Process.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.724.31311"
           },
@@ -42,12 +62,36 @@
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.724.31311"
           },
+          "System.IO.Pipes.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.724.31311"
+          },
+          "System.Net.Primitives.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.724.31311"
+          },
+          "System.Net.Sockets.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.724.31311"
+          },
+          "System.ObjectModel.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.724.31311"
+          },
           "System.Private.CoreLib.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.724.31311"
+          },
+          "System.Private.Uri.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.724.31311"
           },
           "System.Reflection.Metadata.dll": {
             "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.724.31311"
+          },
+          "System.dll": {
+            "assemblyVersion": "4.0.0.0",
             "fileVersion": "8.0.724.31311"
           }
         }

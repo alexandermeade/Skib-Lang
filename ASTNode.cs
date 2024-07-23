@@ -12,8 +12,9 @@ namespace SkibLang
     {
         private string offLoadedString = "";
         private Token token;
-        private ASTNode left;
-        private ASTNode right;
+        private ASTNode? left;
+        private ASTNode? right;
+
         public ASTNode(Token token)
         {
             this.token = token;
@@ -29,19 +30,19 @@ namespace SkibLang
         {
             if (node == null)
                 return;
-            //Console.Writeline($"\nroot:{node.token.repr()} \n");
-            /* if (node.token.getTokenTypeLiteral() == TokenType.funcCall) {
+            Console.WriteLine($"\nroot:{node.token.repr()} \n");
+            if (node.token.getTokenTypeLiteral() == TokenType.funcCall) {
                  string output = "";
                  for (int i = 0; i < node.getToken().getParam().Count; i++)
                  {
                      output += $"\n\n~~~~{i}~~~~\n";
                      output += node.getToken().getParamValues(node.getToken().getParam()[i], 0);
                  }
-             }*/
+            }
             if (node.left != null)
-                //Console.Writeline($"\n\tleft:{node.left.token.repr()}");
+                Console.WriteLine($"\n\tleft:{node.left.token.repr()}");
             if (node.right != null)
-                //Console.Writeline($"\n\tright:{node.right.token.repr()}");
+                Console.WriteLine($"\n\tright:{node.right.token.repr()}");
 
             print(node.left);
             print(node.right);

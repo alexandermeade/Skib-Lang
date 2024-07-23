@@ -11,7 +11,7 @@ namespace SkibLang
 
         private List<Token> tokens = new List<Token>();
         private List<ASTNode> nodes = new List<ASTNode>();
-        private Token currToken = null;
+        private Token? currToken = null;
         private bool inExpr = false;
         private int currIndex = 0;
         public Parser(List<Token> tokens)

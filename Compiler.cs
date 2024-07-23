@@ -14,9 +14,10 @@ namespace SkibLang
     {
 
         private List<ASTNode> nodes = new List<ASTNode>();
-        private ASTNode currNode;
+        private ASTNode? currNode;
         private string output = "";
-        private string NameSpace;
+        private string? NameSpace;
+
         public Compiler(List<ASTNode> nodes)
         {
             this.nodes = nodes;
@@ -41,7 +42,7 @@ namespace SkibLang
                     break;
 
                 default:
-                    throw new Exception("MISSING VAR DECLERATION TYPE");
+                    throw new Exception("ERROR: MISSING VAR DECLERATION TYPE");
 
             }
             this.output += $"\n{varIdent} {varName} = {Compiler.evaluateMath(right)}";
@@ -71,7 +72,7 @@ namespace SkibLang
             ASTNode right = this.currNode.getRight();
 
             if (right == null)
-                throw new Exception("ERROR EXPECTING [STRING] TYPE AFTER [ohio] Keyword");
+                throw new Exception("ERROR: EXPECTING [STRING] TYPE AFTER [ohio] Keyword");
 
             this.output += $"\n{right.getToken().getValueS()}";
 
@@ -82,10 +83,10 @@ namespace SkibLang
             ASTNode right = this.currNode.getRight(); // path
 
             if (left == null)
-                throw new Exception("ERROR EXPECTING [STRING] TYPE AFTER [ohio] Keyword");
+                throw new Exception("ERROR: EXPECTING [STRING] TYPE AFTER [ohio] Keyword");
 
             if (right == null)
-                throw new Exception("ERROR EXPECTING [Id] TYPE AFTER [String] ");
+                throw new Exception("ERROR: EXPECTING [Id] TYPE AFTER [String] ");
 
 
             this.output += $"\nlocal {right.getToken().getValueS()} = require \"{left.getToken().getValueS()}\"";

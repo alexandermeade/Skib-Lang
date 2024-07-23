@@ -9,9 +9,9 @@ namespace SkibLang
     internal class Lexer
     {
 
-        private string source;
+        private string source = "";
         private int index;
-        private List<Token> tokens;
+        private List<Token>? tokens;
         private char currChar;
 
         public Lexer(string source)
