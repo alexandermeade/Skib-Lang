@@ -130,8 +130,7 @@ namespace SkibLang
             return args;
         }
 
-        private void evaluateFunctionDecl()
-        {
+        private void evaluateFunctionDecl() {
             ASTNode left = this.currNode.getLeft(); //var name
             ASTNode right = this.currNode.getRight(); // path
 
@@ -153,6 +152,7 @@ namespace SkibLang
                 pathNode = left;
             }
             string value = "";
+
             switch (left.getToken().getTokenTypeLiteral())
             {
                 case TokenType.pub:
@@ -191,7 +191,8 @@ namespace SkibLang
                     }
                     break;
                 default:
-                    this.output += Compiler.evaluateMath(this.currNode);
+                    this.output += Compiler.evaluateMath(pathNode);
+                    //this.output += Compiler.evaluateMath(this.currNode);
                     break;
             }
             this.output += "\nend\n";
@@ -231,8 +232,7 @@ namespace SkibLang
 
             //Console.Writeline($"\n\n\n\n\n ================PARSNIG{this.currNode.getToken().getValueS()}\n\n\n\n");
 
-            foreach (List<Token> tokens in node.getToken().getParam())
-            {
+            foreach (List<Token> tokens in node.getToken().getParam()) {
                 tokens.Add(new Token(TokenType.EOF, "\\0"));
                 Parser parser = new Parser(tokens);
                 parser.start();

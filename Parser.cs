@@ -107,7 +107,7 @@ namespace SkibLang
                 case TokenType.functionDecleration:
                 case TokenType.If:
                     this.next(tok.getTokenTypeLiteral());
-                    return new ASTNode(tok, this.factor(), this.expr());
+                    return new ASTNode(tok, this.expr(), this.expr());
 
                 case TokenType.BWNot:
                 case TokenType.Not:

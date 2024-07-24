@@ -16,8 +16,8 @@ namespace SkibLang
 
         public static string helpContent = "\n-v : prints to the terminal the current version of skib lang you are using\n\n-h : prints out this help message to the terminal\n\ncompiler commands:\n\n--lexer-dump: prints out the token info after the lexing phase of compilation\n\n--parser-dump: prints out the node info after the parsing phase of compilation\n\n-r: run the compiled lua53 program";
 
-        public static string compilerVersion = "1.0.0";
-        public static string releaseDate = "7/18/2024";
+        public static string compilerVersion = "2.0.0";
+        public static string releaseDate = "7/24/2024";
 
         static void Main(string[] args) {
 
@@ -58,7 +58,7 @@ namespace SkibLang
                         continue; 
 
                     case "-v":
-                        Console.WriteLine($"     __ skib.cs:\n    |  | Compiler version:  (v{Program.compilerVersion})\n ___|  | release date: {Program.releaseDate}\n(    .'\n )__( \n");
+                        Console.WriteLine($"     __  skib.cs:\n    |  | Compiler version:  (v{Program.compilerVersion})\n ___|  | release date: {Program.releaseDate}\n(    .'\n )__( \n");
                         commandCount++;
                         continue;
                     case "-h":
