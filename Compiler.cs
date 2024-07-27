@@ -281,6 +281,7 @@ namespace SkibLang
                 case TokenType.Id:
                 case TokenType.List:
                 case TokenType.Index:
+                    //Console.WriteLine($"INDEX RESULT : {node.getToken().getLiteralValue()}");
                     return $"{node.getToken().getLiteralValue()}";
 
 

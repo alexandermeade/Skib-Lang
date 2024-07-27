@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("skib.cs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0c985db0bb844d549afb88d154cea0020ecdcc2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78a90ff1a6b27df468bec8585eeb604edae10a9d")]
 [assembly: System.Reflection.AssemblyProductAttribute("skib.cs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("skib.cs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
