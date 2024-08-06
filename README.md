@@ -1,6 +1,6 @@
 
 ![fire](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/d0e0aab8-c12c-47ac-97af-dd8439e9f9cb)
-
+# Note: The linux build does not currently work for linux yet ^_^
 
 #adviosory note
 
