@@ -19,9 +19,9 @@ As an example, this is a simple fizzbuzz program in Skiblang.
 
 # comments and vars
 
-pretty self-explanatory here:
-
-![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/1ddedc88-d8e2-46f7-9f0d-5544930e7336)
+ tiktokrizzparty this won't run lmao
+ a = 3
+ print(a)
 
 # data tables
 
