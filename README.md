@@ -18,11 +18,11 @@ SkibLang comes with a variety of features, such as functions.
 As an example, this is a simple fizzbuzz program in Skiblang.
 
 # comments and vars
-
+```
  tiktokrizzparty this won't run lmao
  a = 3
  print(a)
-
+```
 # data tables
 
 !classes == peace tiktokrizzparty true
