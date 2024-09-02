@@ -18,6 +18,7 @@ SkibLang comes with a variety of features, such as functions.
 As an example, this is a simple fizzbuzz program in Skiblang.
 
 # comments and vars
+Using the "rizz" keyword, we can define a local variable in lua terms to act as an iterator for our gyatt (loop), and once our iterator reaches a certain point, we can hit the breaks with caseoh.
 ```
  tiktokrizzparty this won't run lmao
  a = 3
@@ -25,47 +26,161 @@ As an example, this is a simple fizzbuzz program in Skiblang.
 ```
 # data tables
 
-!classes == peace tiktokrizzparty true
+```
+rizz a = [1,2,3,4]
 
-![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/4f700409-37ad-4761-a28e-ed7508a881bc)
+rizz b = [name = "alex", age = 19]
 
+print(b.name) tiktokrizzparty print datatable value: name
+print(a) tiktokrizzparty prints table address
 
-# anonymous functions
+```
 
-use skibidi _() {} to make an anonymoush function :3
-
-![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/cc3f355a-8ff9-4854-ba18-37ec6736ad37)
 
 # fizzBuzz and functions!
 
-![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/316a0be8-bcf3-4d49-bb9e-710cd72acb6f)
+tip: you can use the 'mrworldwide' keyword after the skibidi keyword to make the function public
+```
+
+
+tiktokrizzparty private version of fizzbuzz
+ 
+skibidi fizzBuzz(n) {
+    
+    sus n%3==0 && n%5==0 lowtaperfade "fizzbuzz" 
+    sus n%5==0 lowtaperfade "buzz"
+    sus n%3==0 lowtaperfade "fizz"
+    lowtaperfade n
+}
+
+skibidi privFizzBuzz(n) {
+    
+    sus n%3==0 && n%5==0 lowtaperfade "fizzbuzz" 
+    sus n%5==0 lowtaperfade "buzz"
+    sus n%3==0 lowtaperfade "fizz"
+    lowtaperfade n
+}
+
+print(fizzBuzz(1))
+print(fizzBuzz(3))
+print(fizzBuzz(5))
+print(fizzBuzz(15))
 
 
 
-This program will then compile inferior Lua code: 
+```
 
-![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/9797cdab-6d73-4c52-9311-acfea5f13c6a)
 
-Side Note you can use the keyword "mrworldwide" to make the function public to other modules :D
+# anonymous functions
+```
 
-![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/da21b2e9-c285-41b8-8edb-b11958c89ae2)
+skibidi func(fn) fn()
+
+func(
+    skibidi _() print("hello :D ")
+)
+
+```
+
+This program will then compile to Lua code: 
+```
+
+local function fizzBuzz(n )
+			
+if (((n) % (3)) == (0)) and (((n) % (5)) == (0)) then 
+	
+return "fizzbuzz"
+end
+	
+if ((n) % (5)) == (0) then 
+	
+return "buzz"
+end
+	
+if ((n) % (3)) == (0) then 
+	
+return "fizz"
+end
+	
+return n	
+end
+
+print(
+fizzBuzz(1)
+)
+
+print(
+fizzBuzz(3)
+)
+
+print(
+fizzBuzz(5)
+)
+
+print(
+fizzBuzz(15)
+)
+
+
+```
 
 # variable decleration, loops, breaking!
 
 
 Now you can't have a modern programming language without loops, so let's put some in our Fizzbuzz program.
+```
 
-![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/b07ebac9-c91d-4684-babf-5723fc576ac5)
+skibidi fizzBuzz(n) {
+    
+    sus n%3==0 && n%5==0 lowtaperfade "fizzbuzz" 
+    sus n%5==0 lowtaperfade "buzz"
+    sus n%3==0 lowtaperfade "fizz"
+    lowtaperfade n
+}
 
-Using the "rizz" keyword, we can define a local variable in lua terms to act as an iterator for our gyatt (loop), and once our iterator reaches a certain point, we can hit the breaks with caseoh.
+rizz a = 0
+
+gyatt {
+    sus a>=100 caseoh
+
+    print(fizzBuzz(a))
+
+    a = a + 1
+}
+
+```
+
+
 
 As a note, the "pass" key word is for continue statements.
 
 # embeding!
 
 Now let's do some advanced skib scripting.
+```
 
-![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/e51c2989-b7b9-4667-bd2b-553a572dd869)
+skibidi map(values, fn) {
+    newValues = []
+
+    ohio "
+        for i, v in ipairs(values) do 
+            newValues[#newValues+1] = fn(v)
+        end
+    "
+    lowtaperfade newValues
+}
+
+skibidi fizzBuzz(n) {
+    
+    sus n%3==0 && n%5==0 lowtaperfade "fizzbuzz" 
+    sus n%5==0 lowtaperfade "buzz"
+    sus n%3==0 lowtaperfade "fizz"
+    lowtaperfade n
+}
+
+map(map([1,2,3,4], fizzBuzz),skibidi _(v) print(v))
+
+```
 
 This program uses embedding via the "ohio" keyword to allow for the use of lua in skibLang, and with this, we can declare a generic function like map to run the fizzbuzz code below.
 
@@ -73,30 +188,76 @@ This program uses embedding via the "ohio" keyword to allow for the use of lua i
 
 However, I'm not quite satisfied yet with the whole look of this, so let's use pipes to make it look good and to spite javascript. 
 
-![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/cb842e7c-35fd-45f0-8001-6ca974db7d30)
+```
 
-Now, that's not the nicest code you've ever seen.
+skibidi map(values, fn) {
+    newValues = []
+
+    ohio "
+        for i, v in ipairs(values) do 
+            newValues[#newValues+1] = fn(v)
+        end
+    "
+    lowtaperfade newValues
+}
+
+skibidi fizzBuzz(n) {
+    
+    sus n%3==0 && n%5==0 lowtaperfade "fizzbuzz" 
+    sus n%5==0 lowtaperfade "buzz"
+    sus n%3==0 lowtaperfade "fizz"
+    lowtaperfade n
+}
+
+[1,2,3,4,5] :3 map(fizzBuzz) :3 map(skibidi _(n) print(n))
+```
+
+Now, is that not the nicest code you've ever seen.
 
 # modules
 
 Now what about modules? I hear you cry well. You can use the keyword "bussin" to use your favorite modules!
+```
 
-![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/edaf3573-c6b7-44de-bf8d-fc64dcdefb03)
+
+bussin "math" math
+
+math.pow(2,2) :3 print
+
+```
 
 # slotting
 
 Now, with an important note, this will not import your files into Skiblang. Only the slot keyword can also be known as the "kaicenat" keyword.
 
-![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/3d8aa65f-2425-4fd1-b959-2f0063afaaaf)
+=============<main.skib>=============
+
+```
+kaicenat "./otherFile.skib"
+
+otherFile_print("hello world :D")
+```
+
+=============<otherFile.skib>=============
+
+```
+skibidi otherFile_print(word) print("otherFile: " ++ word)
+```
 
 With the kaicenat keyword, we can slot in the code into our main program!
+
 
 # namespaceishes
 
 Now the big filepath may be off-putting to you, and with good reason, but we can use the namespace keyword "livvy" to keep it short and sweet.
 
+```
+livvy "C:\\Users\\allon\\Desktop\\test"
 
-![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/d712cd53-67e9-4478-8ce6-fce389556286)
+kaicenat "otherFile.skib"
+
+otherFile_print("hello world :D")
+```
 
 
 
