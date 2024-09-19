@@ -270,9 +270,9 @@ since everything in this langauge is built off of lua you can use lua libraries 
 ![image](https://github.com/AlexanderMeade/Skib-Lang/assets/128431625/d3ba7b83-abb1-4491-b1a8-3fc7f29595fc)
 
 
-# Compiler NOtes
+# Compiler Notes
 
-#windows
+# windows
 
 to run the skib.cs compiler navigate to the publish directory and then you can freely run it using.
 
@@ -280,7 +280,7 @@ to run the skib.cs compiler navigate to the publish directory and then you can f
 ./skib.cs -r ./example.skib
 ```
 
-#Linux
+# Linux
 
 To run the skib.cs compiler you must first convert it into a runnable format. 
 
