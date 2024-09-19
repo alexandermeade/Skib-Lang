@@ -278,7 +278,6 @@ to run the skib.cs compiler navigate to the publish directory and then you can f
 
 ```
 ./skib.cs -r ./example.skib
-
 ```
 
 #Linux
