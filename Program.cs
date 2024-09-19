@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -13,11 +13,11 @@ namespace SkibLang
 {
     internal class Program
     {
-
-        public static string helpContent = "\n-v : prints to the terminal the current version of skib lang you are using\n\n-h : prints out this help message to the terminal\n\ncompiler commands:\n\n--lexer-dump: prints out the token info after the lexing phase of compilation\n\n--parser-dump: prints out the node info after the parsing phase of compilation\n\n-r: run the compiled lua53 program";
+        public static string helpContent = "\n-v : prints to the terminal the current version of skib lang you are using\n\n-h : prints out this help message to the terminal\n\ncompiler commands:\n\n--lexer-dump: prints out the token info after the lexing phase of compilation\n\n--parser-dump: prints out the node info after the parsing phase of compilation\n\n-r: run the compiled lua53 program\n\n-c: specify the compiler you want use by providing the name of the compiler. NOTE: the compiler must be reconized as a global command to use.";
 
         public static string compilerVersion = "2.0.0";
         public static string releaseDate = "7/24/2024";
+        
 
         static void Main(string[] args) {
 
@@ -33,6 +33,7 @@ namespace SkibLang
             }
             */
 
+            string luaCompiler = "lua";
             bool lexerDump = false;
             bool parserDump = false;
             bool runAfterCompiling = false;
@@ -68,6 +69,14 @@ namespace SkibLang
                     case "-r":
                         runAfterCompiling = true;
                         continue;
+                    case "-c":
+                        if (i + 1 >= args.Length) {
+                            Console.WriteLine("Expected the name for a compiler after -c");
+                            return;
+                        }
+                        luaCompiler = args[i+1];
+
+                        continue;                        
                 }
 
             }
@@ -144,7 +153,7 @@ namespace SkibLang
 
             // Set a variable to the Documents path.
 
-            string outputPath = Directory.GetCurrentDirectory() + $"\\{input.Replace(".skib", ".lua")}";
+            string outputPath = Directory.GetCurrentDirectory() + $"\\{input.Replace("./", "").Replace(".skib", ".lua")}";
 
             //Console.WriteLine(outputPath);
             string docPath = "";
@@ -161,14 +170,14 @@ namespace SkibLang
             }
 
             if (runAfterCompiling) {
-                Program.runSelf(outputPath);
+                Program.runSelf(outputPath, luaCompiler);
             }
         }
         
-        private static void runSelf(string outputPath) {
+        private static void runSelf(string outputPath, string luaCompiler) {
             // The path to the executable you want to run
-            string executablePath = "lua53";
-
+            string executablePath = luaCompiler;
+            
             ProcessStartInfo startInfo = new ProcessStartInfo{ 
                 FileName = executablePath, 
                 Arguments = outputPath,
@@ -195,12 +204,20 @@ namespace SkibLang
                 process.WaitForExit();
 
                 // Output the results
-                Console.WriteLine(output);
-                Console.WriteLine(error);
+                if (output != ""){
+                    Console.WriteLine(output);
+                }
+                if (error != ""){
+                    Console.WriteLine(error);
+                }
             }
-            catch (Exception ex){
-                // Handle any exceptions
-                Console.WriteLine("ERROR: unable to run through the lua53 Executable in your System Enviorments. \n Notes:\n\t if you do not have the lua53 Executable installed you can do so by visiting this link: https://www.lua.org/download.html");
+            catch (Exception ex) {
+                if (executablePath != "lua") {
+                    Console.WriteLine("ERROR: The Compiler you have provided doesn't seem to be reachable");
+                    return;
+                }
+                // Handle any exception
+                Console.WriteLine("ERROR: unable to run through the lua Executable in your System Enviorments. \n Notes:\n\t if you do not have the lua53 Executable installed you can do so by visiting this link: https://www.lua.org/download.html");
 
                 Console.WriteLine($"An error occurred: {ex.Message}");
             }
