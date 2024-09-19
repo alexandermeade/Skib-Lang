@@ -1,2 +1,0 @@
-C:\Users\alex\Desktop\skibRepo\skib.cs\bin\Release\net8.0\linux-x64\publish\skib.cs.pdb
-C:\Users\alex\Desktop\skibRepo\skib.cs\bin\Release\net8.0\linux-x64\publish\skib.cs
