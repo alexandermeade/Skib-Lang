@@ -75,9 +75,7 @@ print(fizzBuzz(15))
 
 skibidi func(fn) fn()
 
-func(
-    skibidi _() print("hello :D ")
-)
+func(skibidi _() print("hello :D "))
 
 ```
 
