@@ -44,7 +44,7 @@ tip: you can use the 'mrworldwide' keyword after the skibidi keyword to make the
 
 tiktokrizzparty private version of fizzbuzz
  
-skibidi fizzBuzz(n) {
+skibidi mrworldwide fizzBuzz(n) {
     
     sus n%3==0 && n%5==0 lowtaperfade "fizzbuzz" 
     sus n%5==0 lowtaperfade "buzz"
