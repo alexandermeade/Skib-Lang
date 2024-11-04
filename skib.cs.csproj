@@ -6,4 +6,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <!-- Remove the ItemGroup entirely -->
+  <!-- <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Lexer.cs" />
+    <Compile Include="ASTNode.cs" />
+    <Compile Include="Parser.cs" />
+    <Compile Include="Token.cs" />
+  </ItemGroup> -->
 </Project>
+

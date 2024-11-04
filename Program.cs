@@ -153,7 +153,8 @@ namespace SkibLang
 
             // Set a variable to the Documents path.
 
-            string outputPath = Directory.GetCurrentDirectory() + $"\\{input.Replace("./", "").Replace(".skib", ".lua")}";
+//            string outputPath = Directory.GetCurrentDirectory() + $"\\{input.Replace("./", "").Replace(".skib", ".lua")}";
+            string outputPath = Path.Combine(Directory.GetCurrentDirectory(), input.Replace("./", "").Replace(".skib", ".lua"));
 
             //Console.WriteLine(outputPath);
             string docPath = "";
